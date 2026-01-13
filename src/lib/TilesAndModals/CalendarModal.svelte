@@ -44,6 +44,7 @@
 				'<div class="flex justify-center"> <p class="md:text-xl text-sm">' +
 				arg.event.title +
 				' </p> </div>' +
+				arg.event.instructor +
 				'<div class="flex justify-center"> <p class="md:text-sm md:visible invisible">' +
 				(padIt(arg.event.start?.getHours().toString()) +
 					':' +

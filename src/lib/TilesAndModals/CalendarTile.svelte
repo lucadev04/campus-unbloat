@@ -82,7 +82,8 @@
 				instructor: element.instructor,
 				textColor: element.font_color,
 				remarks: element.remarks,
-				color: element.color
+				color: element.color,
+				description: element.description
 			});
 		});
 

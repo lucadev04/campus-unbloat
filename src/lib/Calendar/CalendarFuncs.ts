@@ -55,7 +55,8 @@ export function unixEventsToEvents(uEvents: Array<EventUnix>): Array<Event> {
 			instructor: event.instructor,
 			room: event.room,
 			remarks: event.remarks,
-			color: event.color
+			color: event.color,
+			description: event.description
 		});
 	});
 

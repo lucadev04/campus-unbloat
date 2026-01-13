@@ -51,6 +51,7 @@ export interface EventUnix {
 	textColor: string;
 	remarks: string;
 	color: string;
+	description: string
 }
 
 export interface Event {
@@ -60,6 +61,7 @@ export interface Event {
 	textColor: string;
 	room: string;
 	instructor: string;
+	description: string;
 	remarks: string;
 	color: string;
 }

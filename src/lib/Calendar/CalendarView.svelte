@@ -11,7 +11,7 @@
 	{#if currentEvents.length == 0}
 		<p class="font-semibold text-center">{getAltNoEventString(selectedDate)}</p>
 	{:else}
-		{#each currentEvents as { start, end, title, room, instructor, remarks, color }}
+		{#each currentEvents as { start, end, title, room, instructor, remarks, color, description }}
 			<div class="flex flex-row card-transparent-60">
 				<div class="w-3 rounded-l-3xl" style="background-color: {color};" />
 				<div class="mr-2 py-2 w-full flex flex-col justify-center items-center">
@@ -32,6 +32,14 @@
 							Raum: {room}
 						{/if}
 					</p>
+					<p>
+  						{#if description}
+    						{description}
+  						{/if}
+					</p>
+
+
+
 
 					{#if remarks}
 						<div class="mt-0.5 px-2 flex flex-row space-x-2 items-center pr-8">
